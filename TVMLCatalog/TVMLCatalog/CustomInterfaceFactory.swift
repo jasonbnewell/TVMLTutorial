@@ -41,4 +41,19 @@ class CustomInterfaceFactory: TVInterfaceFactory {
         // return nil when we do not want to override a view
         return nil
     }
+    
+    override func viewControllerForElement(element: TVViewElement, existingViewController: UIViewController?) -> UIViewController? {
+        
+        print("View controller for element: \(element.elementName)")
+        if (element.elementName == "customElement") {
+            // Optionally, you could retrieve a storyboard by name and then instantiate and return the view controller, like so:
+//            let missingStoryboard = UIStoryboard(name: "missing", bundle: nil)
+//            let viewController = missingStoryboard().instantiateInitialViewController()
+            
+            let viewController = CustomElementViewController()
+            return viewController
+        }
+        
+        return nil
+    }
 }

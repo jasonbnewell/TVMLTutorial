@@ -26,7 +26,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, TVApplicationControllerDe
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
         TVInterfaceFactory.sharedInterfaceFactory().extendedInterfaceCreator = CustomInterfaceFactory()
-        
+    
+        TVElementFactory.registerViewElementClass(CustomElement.self, forElementName: "customElement")
         /*
             Create the TVApplicationControllerContext for this application
             and set the properties that will be passed to the `App.onLaunch` function
@@ -58,7 +59,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, TVApplicationControllerDe
         appController = TVApplicationController(context: appControllerContext, window: window, delegate: self)
         
         UITabBar.appearance().backgroundColor = UIColor.redColor()
-        
+
         return true
     }
     

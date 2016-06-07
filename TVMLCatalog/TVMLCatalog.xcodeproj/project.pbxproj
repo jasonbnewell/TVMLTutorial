@@ -12,6 +12,8 @@
 		742B5E6B1D063D39000F9239 /* UITabBarController+Customizations.m in Sources */ = {isa = PBXBuildFile; fileRef = 742B5E6A1D063D39000F9239 /* UITabBarController+Customizations.m */; };
 		742B5E711D0641B3000F9239 /* smile.png in Resources */ = {isa = PBXBuildFile; fileRef = 742B5E701D0641B3000F9239 /* smile.png */; };
 		742B5E741D064909000F9239 /* CustomInterfaceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742B5E731D064909000F9239 /* CustomInterfaceFactory.swift */; };
+		742B5E761D0658C5000F9239 /* CustomElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742B5E751D0658C5000F9239 /* CustomElement.swift */; };
+		742B5E781D065A38000F9239 /* CustomElementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742B5E771D065A38000F9239 /* CustomElementViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		742B5E6A1D063D39000F9239 /* UITabBarController+Customizations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+Customizations.m"; sourceTree = "<group>"; };
 		742B5E701D0641B3000F9239 /* smile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smile.png; sourceTree = "<group>"; };
 		742B5E731D064909000F9239 /* CustomInterfaceFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomInterfaceFactory.swift; sourceTree = "<group>"; };
+		742B5E751D0658C5000F9239 /* CustomElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomElement.swift; sourceTree = "<group>"; };
+		742B5E771D065A38000F9239 /* CustomElementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomElementViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				742B5E691D063D39000F9239 /* UITabBarController+Customizations.h */,
 				742B5E6A1D063D39000F9239 /* UITabBarController+Customizations.m */,
 				742B5E731D064909000F9239 /* CustomInterfaceFactory.swift */,
+				742B5E751D0658C5000F9239 /* CustomElement.swift */,
+				742B5E771D065A38000F9239 /* CustomElementViewController.swift */,
 			);
 			path = TVMLCatalog;
 			sourceTree = "<group>";
@@ -148,6 +154,8 @@
 				65AE407D1B8C3649006FB795 /* AppDelegate.swift in Sources */,
 				742B5E6B1D063D39000F9239 /* UITabBarController+Customizations.m in Sources */,
 				742B5E741D064909000F9239 /* CustomInterfaceFactory.swift in Sources */,
+				742B5E781D065A38000F9239 /* CustomElementViewController.swift in Sources */,
+				742B5E761D0658C5000F9239 /* CustomElement.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

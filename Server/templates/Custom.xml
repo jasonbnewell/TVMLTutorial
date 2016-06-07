@@ -1,0 +1,23 @@
+<document>
+<head>
+	<style>
+	</style>
+</head>
+	<catalogTemplate theme="dark">
+		<banner class="banner">
+			<row class="bannerRow">
+				<title class="bannerTitle">A Regular Label</title>
+			</row>
+		</banner>
+		<list>
+	     	<section>
+	        	<listItemLockup>
+	            	<title class="listItemTitle">Custom Element/View -></title>
+					<relatedContent>
+						<customElement></customElement>
+					</relatedContent>
+	            </listItemLockup>
+			</section>
+		</list>
+	</catalogTemplate>
+</document>
