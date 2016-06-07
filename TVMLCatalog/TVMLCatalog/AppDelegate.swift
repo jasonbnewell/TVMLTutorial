@@ -52,7 +52,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, TVApplicationControllerDe
             }
         }
 
+        
         appController = TVApplicationController(context: appControllerContext, window: window, delegate: self)
+        
+        UITabBar.appearance().backgroundColor = UIColor.redColor()
         
         return true
     }
