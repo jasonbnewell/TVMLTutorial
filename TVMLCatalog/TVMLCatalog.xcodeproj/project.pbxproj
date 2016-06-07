@@ -11,6 +11,7 @@
 		65AE40841B8C3649006FB795 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65AE40831B8C3649006FB795 /* Assets.xcassets */; };
 		742B5E6B1D063D39000F9239 /* UITabBarController+Customizations.m in Sources */ = {isa = PBXBuildFile; fileRef = 742B5E6A1D063D39000F9239 /* UITabBarController+Customizations.m */; };
 		742B5E711D0641B3000F9239 /* smile.png in Resources */ = {isa = PBXBuildFile; fileRef = 742B5E701D0641B3000F9239 /* smile.png */; };
+		742B5E741D064909000F9239 /* CustomInterfaceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742B5E731D064909000F9239 /* CustomInterfaceFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		742B5E691D063D39000F9239 /* UITabBarController+Customizations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+Customizations.h"; sourceTree = "<group>"; };
 		742B5E6A1D063D39000F9239 /* UITabBarController+Customizations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+Customizations.m"; sourceTree = "<group>"; };
 		742B5E701D0641B3000F9239 /* smile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smile.png; sourceTree = "<group>"; };
+		742B5E731D064909000F9239 /* CustomInterfaceFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomInterfaceFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				742B5E681D063D38000F9239 /* TVMLCatalog-Bridging-Header.h */,
 				742B5E691D063D39000F9239 /* UITabBarController+Customizations.h */,
 				742B5E6A1D063D39000F9239 /* UITabBarController+Customizations.m */,
+				742B5E731D064909000F9239 /* CustomInterfaceFactory.swift */,
 			);
 			path = TVMLCatalog;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 			files = (
 				65AE407D1B8C3649006FB795 /* AppDelegate.swift in Sources */,
 				742B5E6B1D063D39000F9239 /* UITabBarController+Customizations.m in Sources */,
+				742B5E741D064909000F9239 /* CustomInterfaceFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

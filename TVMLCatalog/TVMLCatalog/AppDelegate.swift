@@ -25,6 +25,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, TVApplicationControllerDe
         // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
+        TVInterfaceFactory.sharedInterfaceFactory().extendedInterfaceCreator = CustomInterfaceFactory()
+        
         /*
             Create the TVApplicationControllerContext for this application
             and set the properties that will be passed to the `App.onLaunch` function
