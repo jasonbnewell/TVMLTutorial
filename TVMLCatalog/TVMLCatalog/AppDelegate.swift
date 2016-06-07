@@ -60,6 +60,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate, TVApplicationControllerDe
         
         UITabBar.appearance().backgroundColor = UIColor.redColor()
 
+        // Simple example for calling JS from Swift
+        appController!.evaluateInJavaScriptContext({(evaluation: JSContext) -> Void in
+            // Simplest method is to pass in a string you want to execute
+            evaluation.evaluateScript("console.log('You can see this in the Safari debug console!');")
+            
+            // Optionally, you can get a JSValue object by retrieving a function or object by name:
+            // let someObject = evaluation.objectForKeyedSubscript("someObject")
+            // If this object is a function, you can use 'callWithArguments' to call it. Check the JSContext documentation for other features
+            }, completion: {(Bool) -> Void in
+                print("JavaScript finished running")
+        })
+        
         return true
     }
     
@@ -83,5 +95,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate, TVApplicationControllerDe
     
     func appController(appController: TVApplicationController, didStopWithOptions options: [String: AnyObject]?) {
         print("\(#function) invoked with options: \(options)")
+    }
+    
+    func appController(appController: TVApplicationController, evaluateAppJavaScriptInContext jsContext: JSContext) {
+        // Define a block which can be called as a native function from the TVJS global context
+        // Note optional arguments are supported,
+        let printXCode: @convention(block) (String) -> Void = {
+            (string: String) -> Void in
+            // Allow JS debugger lines to be shown in the XCode console instead of Safari
+            print(string)
+        }
+        
+        // Callable anywhere in TVJS like 'printXCode("test");'
+        jsContext.setObject(unsafeBitCast(printXCode, AnyObject.self), forKeyedSubscript:"printXCode");
+        // Note that you can also pass your own objects, and the public methods on those objects can be called using JavaScript's dot syntax e.g. someObject.getSomeValue(); or someObject.setSomeValue('test');
     }
 }
