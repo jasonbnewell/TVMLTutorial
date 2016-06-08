@@ -36,7 +36,7 @@
     // Call the replaced method to avoid horribly breaking everything.
     [self x_viewDidLayoutSubviews];
     // Customize the first tab bar button on every instance of UITabBar (typically there's only one)
-    UITabBarItem *first = [self.tabBar.items objectAtIndex:1];
+    UITabBarItem *first = [self.tabBar.items objectAtIndex:0];
     first.image = [[UIImage imageNamed:@"smile.png"] imageWithRenderingMode:UIImageRenderingModeAutomatic]; // Render as mask
     first.selectedImage = [UIImage imageNamed:@"smile.png"];
     first.title = @"";
